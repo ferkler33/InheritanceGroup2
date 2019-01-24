@@ -97,4 +97,13 @@ public class Person {
             gender = newGender;
         }
     }
+
+    /** The toString method.
+     * 
+     */
+    public String toString() {
+        String theString = "NAME: " + name + "/n" + "AGE: " + age + "/n" + "WEIGHT: " + weight + "/n" + "SEX: " + gender;
+        return theString; 
+    }
 }
+
