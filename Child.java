@@ -76,7 +76,7 @@ public class Child extends Person {
 
     /** The setFavActivity method. 
      * 
-     * @partam newActivity The child's new favorite activity.
+     * @param newActivity The child's new favorite activity.
      */
     public void setFavActivity(String newFavActivity) {
         favoriteActivity = newFavActivity;
@@ -84,7 +84,7 @@ public class Child extends Person {
 
     /** The setFavEntertainment method. 
      * 
-     * @partam newActivity The child's new favorite source of entertainment.
+     * @param newActivity The child's new favorite source of entertainment.
      */
     public void setFavEntertainment(String newFavEntertainment) {
         favoriteEntertainment = newFavEntertainment;

@@ -12,14 +12,17 @@ public class Adult extends Person {
     /** The adult's favorite physical activity. */
     private String favoriteActivity;
 
+    /** The adult's relationship status. */
+    private String relationshipStatus;
     /**
      * Constructor for objects of class Adult
      */
-    public Adult(String theName, int theAge, double theWeight, char theGender, String entertainment, String activity) {        
+    public Adult(String theName, int theAge, double theWeight, char theGender, String entertainment, String activity, String theRelationshipStatus) {        
         super(theName, theAge, theWeight, theGender);
         this.setAge(theAge);
         favoriteEntertainment = entertainment;
         favoriteActivity = activity;
+        relationshipStatus = theRelationshipStatus;
     }
 
     @Override
@@ -35,7 +38,7 @@ public class Adult extends Person {
             super.setAge(newAge);
         }
     }
-	
+
     /** The getEmploymentStatus method.
      * 
      * @return The current employment status of the adult.
@@ -71,9 +74,32 @@ public class Adult extends Person {
         return favoriteEntertainment;
     }
 
+    /**
+     * The getRelationshipStatus method.
+     * 
+     * @return The adult's relationship status.
+     */
+    public String getRelationshipStatus() {
+        return relationshipStatus;
+    }
+
+    /**
+     * The setRelationshipStatus method.
+     *
+     * @param newRealtionshipStatus The adult's new favorite activity.
+     */
+    public void setRelationshipStatus(String newRelationshipStatus) {
+        if(!newRelationshipStatus.equalsIgnoreCase("single") || !newRelationshipStatus.equalsIgnoreCase("taken") || !newRelationshipStatus.equalsIgnoreCase("engaged") || !newRelationshipStatus.equalsIgnoreCase("married") || !newRelationshipStatus.equalsIgnoreCase("widowed")) {
+            System.out.println("Invalid relationship status.");
+        }
+        else {
+            relationshipStatus = newRelationshipStatus;
+        }
+    }
+
     /** The setFavActivity method. 
      * 
-     * @partam newActivity The adult's new favorite activity.
+     * @param newActivity The adult's new favorite activity.
      */
     public void setFavActivity(String newFavActivity) {
         favoriteActivity = newFavActivity;
@@ -81,7 +107,7 @@ public class Adult extends Person {
 
     /** The setFavEntertainment method. 
      * 
-     * @partam newActivity The adult's new favorite source of entertainment.
+     * @param newActivity The adult's new favorite source of entertainment.
      */
     public void setFavEntertainment(String newFavEntertainment) {
         favoriteEntertainment = newFavEntertainment;
