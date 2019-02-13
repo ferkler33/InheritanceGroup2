@@ -11,6 +11,7 @@ public class Child extends Person {
 
     /** The childs favorite physical activity. */
     private String favoriteActivity;
+    
 
     /**
      * Constructor for objects of class Child
@@ -28,7 +29,7 @@ public class Child extends Person {
      * @param newAge The new age.
      */
     public void setAge(int newAge) {
-        if(newAge > 12 && newAge < 0) {
+        if(newAge > 12 && newAge < 3) {
             System.out.println("A child can not be this age!");
         }
         else { 
