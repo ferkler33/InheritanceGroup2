@@ -49,7 +49,7 @@ public class Toddler extends Person
      */
     public void setAge(int newAge)
     {
-        if (newAge > 3 && newAge <= 0)
+        if (newAge > 3 && newAge <= 0 )
         {
             System.out.println("A toddler cannot be this age!");
         }
