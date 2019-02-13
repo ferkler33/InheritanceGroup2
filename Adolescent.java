@@ -95,11 +95,11 @@ public class Adolescent extends Person {
      * @param newRealtionshipStatus The adolescent's new favorite activity.
      */
     public void setRelationshipStatus(String newRelationshipStatus) {
-        if(!newRelationshipStatus.equalsIgnoreCase("single") || !newRelationshipStatus.equalsIgnoreCase("taken")) {
-            System.out.println("Invalid relationship status.");
+        if(newRelationshipStatus.equalsIgnoreCase("single") || newRelationshipStatus.equalsIgnoreCase("taken")) {
+            relationshipStatus = newRelationshipStatus;
         }
         else {
-            relationshipStatus = newRelationshipStatus;
+            System.out.println("Invalid relationship status.");
         }
     }
 

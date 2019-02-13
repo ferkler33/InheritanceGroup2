@@ -8,32 +8,33 @@
 public class Main { 
     public static void main(String[] args) {
         Person Billy = new Person("Billy", 35, 200, 'M');
-        Billy.getName();
-        Billy.getAge();        
-        Billy.getWeight();
-        Billy.getGender();
+        System.out.println(Billy.getName());
+        System.out.println(Billy.getAge());        
+        System.out.println(Billy.getWeight());
+        System.out.println(Billy.getGender());
 
         Toddler Lacy = new Toddler("Lacy", 3, 13, 'F', "Spongebob", "Crying", "Rattle");
-        Lacy.getName();
-        Lacy.getAge();        
-        Lacy.getWeight();
-        Lacy.getGender();
-        Lacy.getSchool();
-        Lacy.getFavoriteToy(); 
+        System.out.println(Lacy.getName());
+        System.out.println(Lacy.getAge());        
+        System.out.println(Lacy.getWeight());
+        System.out.println(Lacy.getGender());
+        System.out.println(Lacy.getSchool());
+        System.out.println(Lacy.getFavoriteToy()); 
 
         Child Sam = new Child("Sam", 12, 135, 'M', "Video Games", "Lacrosse");
-        Sam.getName();
-        Sam.getAge();        
-        Sam.getWeight();
-        Sam.getGender();
-        Sam.getSchool();
+        System.out.println(Sam.getName());
+        System.out.println(Sam.getAge());        
+        System.out.println(Sam.getWeight());
+        System.out.println(Sam.getGender());
+        System.out.println(Sam.getSchool());
 
         Adolescent Cathy = new Adolescent("Cathy", 17, 105, 'F', "Netflix", "Listen to music", "Single");
-        Cathy.getName();
-        Cathy.getAge();        
-        Cathy.getWeight();
-        Cathy.getGender();
-        Cathy.getSchool();
-        Cathy.getRelationshipStatus();
+        System.out.println(Cathy.getName());
+        System.out.println(Cathy.getAge());        
+        System.out.println(Cathy.getWeight());
+        System.out.println(Cathy.getGender());
+        System.out.println(Cathy.getSchool());
+        System.out.println(Cathy.getRelationshipStatus());
+
     }
 }
